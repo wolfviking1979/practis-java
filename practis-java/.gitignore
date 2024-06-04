@@ -1,5 +1,5 @@
-.idea/.xml
-
+.idea/
+.gitignore
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
