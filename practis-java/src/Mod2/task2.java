@@ -1,43 +1,32 @@
 package Mod2;
 
+import java.util.Scanner;
+
 public class task2 {
     public static void main(String[] args) {
-        System.out.println("Система расчета стоимости топлива");
-        int fuelType = 92;
-        int amount = 11;
-        boolean has_discount = amount > 10;
-        double fuelPrice = 0;
-        double fuel92price = 60.5;
-        double fuel95price = 67.8;
+        Scanner input = new Scanner(System.in);
+        final int high_score = 95;
+        double average ;
 
-        String wrongFuelTypeMessage = "Указан неверный вид топлива";
+        System.out.print("Введите оценку 1: ");
+        double test1 = input.nextDouble();
+        System.out.print("Введите оценку 2: ");
+        double test2 = input.nextDouble();
+        System.out.print("Введите оценку 3: ");
+        double test3 = input.nextDouble();
+        System.out.println(" ");
 
-        double discount = 0.1;
+        // Расчитать средний бал.
+        average = (test1 + test2 + test3) / 3;
 
+        // Напечатать средний бал.
+        System.out.printf("Средний бал состовляет: %,.1f\n", average);
 
-        if (fuelType == 92) {
-            fuelPrice = fuel92price;
-        } else if (fuelType == 95) {
-            fuelPrice = fuel95price;
-        } else {
-            System.out.println(wrongFuelTypeMessage);
+        // Если средний бал высокий поздравить пользователя.
+        if (average >= high_score) {
+            System.out.println("Поздравляем!");
+            System.out.println("Отличный средний бал!");
         }
-
-        if (has_discount) {
-            fuelPrice = (1 - discount) * fuelPrice;
-        }
-
-        if (amount < 1) {
-            System.out.println("Выбрано слишком маленькое количество топлива");
-            amount = 0;
-        }
-
-        String fuelPriceMessage = "Цена выбранного топлива: " + fuelPrice + " руб.";
-
-        System.out.println(fuelPriceMessage);
-
-        double totalPrice = fuelPrice * amount;
-        System.out.println("Общая стоимость заправки: " + totalPrice + " руб.");
 
     }
 }
