@@ -7,17 +7,17 @@ public class task4_2 {
     private final static int minIncome = 200000;
     private final static int maxIncome = 900000;
 
-    private static int officeRentCharge = 14000;
-    private static int telephonyCharge = 12000;
-    private static int internetAccessCharge = 7200;
+    private final static int officeRentCharge = 14000;
+    private final static int telephonyCharge = 12000;
+    private final static int internetAccessCharge = 7200;
 
-    private static int assistantSalary = 40000;
-    private static int financeManagerSalary = 90000;
+    private final static int assistantSalary = 40000;
+    private final static int financeManagerSalary = 90000;
 
-    private static double mainTaxPercent = 0.24;
-    private static double managerPercent = 0.15;
+    private final static double mainTaxPercent = 0.24;
+    private final static double managerPercent = 0.15;
 
-    private static double minInvestmentsAmount = 100000;
+    private final static double minInvestmentsAmount = 100000;
 
 
     public static void main(String[] args) {
