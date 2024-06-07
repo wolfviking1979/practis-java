@@ -11,7 +11,8 @@ public class Main {
         petyaBasket.add("Лопата", 280);
         petyaBasket.add("Бочка", 2900);
 
-        Basket mashaBasket = new Basket("Стол", 5000);
+        Basket mashaBasket = new Basket( 5000);
+        mashaBasket.add("Картошка", 30, 2, 2 );
 
         vasyaBasket.print("Корзина Васи:");
         petyaBasket.print("Корзина пети:");
