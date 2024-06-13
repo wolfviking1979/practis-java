@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SumNumber {
     public static void main(String[] args) {
         System.out.println("Эта прорграмма считает сумму цифр,");
-        System.out.println("чтобы продолжить нажите цмфру");
+        System.out.println("чтобы продолжить нажите цифру");
         System.out.println("quit = чтобы выйти.\n");
         Scanner input = new Scanner(System.in);
         int total = 0;
