@@ -12,8 +12,8 @@ public class MassOdd {
             }
         }
 
-        for (int j = 0; j < numbers.length; j++) {
-            System.out.println(numbers[j]);
+        for (String number : numbers) {
+            System.out.println(number);
         }
     }
 }
